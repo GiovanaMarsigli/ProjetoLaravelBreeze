@@ -16,4 +16,26 @@ Este projeto é uma aplicação web simples desenvolvida com **Laravel** e **Bre
 - **MySQL**: Banco de dados relacional para armazenar informações sobre os produtos.
 - **Blade**: Motor de templates do Laravel para renderização das views.
 
+### Telas do Site
+![1](https://github.com/user-attachments/assets/3b817310-5a37-4afc-9ba3-f2283c38aaba)
+Home
+
+![2](https://github.com/user-attachments/assets/631f59b4-a6f1-42af-9ddc-6595f951008a)
+Criar Anúncio
+
+## Colaboradoras
+
+Este projeto contou com a colaboração das seguintes desenvolvedoras:
+
+- **Giovana Marsigli**  
+  - [LinkedIn](https://www.linkedin.com/in/giovana-marsigli-rodrigues-b85496289/)  
+  - [GitHub](https://github.com/GiovanaMarsigli)  
+  - [Email](mailto:marsigligiovana@gmail.com)
+
+- **Mariana Akemi**  
+  - [LinkedIn](https://www.linkedin.com/in/mariana-arashiro-112382289?trk=contact-info)  
+  - [GitHub](https://github.com/marianafeitosa)  
+  - [Email](mailto:marianaarashiro09@gmail.com)
+
+
 
