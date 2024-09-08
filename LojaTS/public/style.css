@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Radley', sans-serif;
+    background-color: #3b2a22;
+}
+
+.container {
+    background-image: url('img/home.png'); /* Caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content {
+    text-align: center;
+    color:  #3b2a22;;
+}
+
+.logo {
+    font-size: 80px;
+    color: #7a6451;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #7a6451;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login-btn {
+    background-color: #5a4637;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.login-btn:hover {
+    background-color: #46382c;
+}
+
+/* Logo no canto superior esquerdo */
+.top-left-logo {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+
+.top-left-logo img {
+    width: 135px; /* Ajuste o tamanho conforme necessário */
+}
+
+.container-form {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #3b2a22; /* Marrom mais escuro */
+    padding: 20px;
+    min-height: 60vh; /* Define uma altura mínima para garantir centralização vertical */
+    width: 70%; /* Define uma largura para centralizar */
+    margin: 0 auto; /* Garante centralização horizontal */
+    border-radius: 15px; /* Para bordas suaves na caixa */
+}
+
+/* Seção de imagem do formulário */
+.image-section-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section-form img {
+    width: 80%; /* Ajuste a largura da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Seção de formulário */
+.form-section-form {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinhamento à esquerda */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo do título CRIAR ANÚNCIO */
+h1 {
+    font-family: 'Radley', serif;
+    font-size: 36px;
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+    margin-bottom: 20px;
+    color: #EFEFEF;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centralizado */
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    align-items: left; 
+}
+
+/* Campos de entrada */
+input[type="text"], input[type="file"] {
+    font-family: 'Radley', serif;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px; /* Borda mais arredondada */
+    background-color: #EFEFEF; /* Fundo mais claro */
+    color: #4B3A2D;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave nos inputs */
+}
+
+.upload-image-form {
+    display: flex;
+    flex-direction: column; /* Alinha o ícone e o botão na vertical */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-bottom: 20px;
+    width: 100%; /* Garante que o contêiner de upload ocupe toda a largura do formulário */
+}
+
+.upload-image-form img {
+    width: 100px; /* Define o tamanho máximo da largura */
+    height: 100px; /* Define o tamanho máximo da altura */
+    object-fit: contain; /* Garante que a imagem mantenha sua proporção */
+    margin-bottom: 10px;
+}
+
+
+.upload-image-form label {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center; /* Centraliza o conteúdo do label */
+    width: auto; /* Ajusta o label para o tamanho do conteúdo */
+}
+
+input[type="file"] {
+    display: none; /* Mantém o input oculto */
+}
+
+/* Botão de confirmar */
+button {
+    font-family: 'Radley', serif;
+    padding: 10px;
+    border: none;
+    border-radius: 30px; /* Botão com bordas arredondadas */
+    background-color: #756357;
+    color: #EFEFEF;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave no botão */
+}
+
+button:hover {
+    background-color: #5A4B3F;
+}
