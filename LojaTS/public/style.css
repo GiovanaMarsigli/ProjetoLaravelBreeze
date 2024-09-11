@@ -11,7 +11,7 @@ body, html {
 }
 
 .container {
-    background-image: url('img/home.png'); /* Caminho da sua imagem */
+    background-image: url('img/home.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -58,7 +58,7 @@ body, html {
     background-color: #46382c;
 }
 
-/* Logo no canto superior esquerdo */
+
 .top-left-logo {
     position: absolute;
     top: -30px;
@@ -66,22 +66,22 @@ body, html {
 }
 
 .top-left-logo img {
-    width: 135px; /* Ajuste o tamanho conforme necessário */
+    width: 135px; 
 }
 
 .container-form {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    background-color: #3b2a22; /* Marrom mais escuro */
+    justify-content: center;
+    align-items: center;
+    background-color: #3b2a22; 
     padding: 20px;
-    min-height: 60vh; /* Define uma altura mínima para garantir centralização vertical */
-    width: 70%; /* Define uma largura para centralizar */
-    margin: 0 auto; /* Garante centralização horizontal */
-    border-radius: 15px; /* Para bordas suaves na caixa */
+    min-height: 60vh; 
+    width: 70%; 
+    margin: 0 auto; 
+    border-radius: 15px; 
 }
 
-/* Seção de imagem do formulário */
+
 .image-section-form {
     flex: 1;
     display: flex;
@@ -90,35 +90,33 @@ body, html {
 }
 
 .image-section-form img {
-    width: 80%; /* Ajuste a largura da imagem */
+    width: 80%; 
     height: auto;
     border-radius: 10px;
 }
 
-/* Seção de formulário */
 .form-section-form {
     flex: 1;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Alinhamento à esquerda */
+    align-items: flex-start; 
     padding: 20px;
     border-radius: 10px;
 }
 
-/* Estilo do título CRIAR ANÚNCIO */
+
 h1 {
     font-family: 'Radley', serif;
     font-size: 36px;
-    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+    letter-spacing: 2px; 
     margin-bottom: 20px;
     color: #EFEFEF;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-align: center; /* Centralizado */
+    text-align: center; 
 }
 
-/* Estilo do formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -126,28 +124,27 @@ form {
     align-items: left; 
 }
 
-/* Campos de entrada */
 input[type="text"], input[type="file"] {
     font-family: 'Radley', serif;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
-    border-radius: 20px; /* Borda mais arredondada */
-    background-color: #EFEFEF; /* Fundo mais claro */
+    border-radius: 20px; 
+    background-color: #EFEFEF; 
     color: #4B3A2D;
     font-size: 16px;
     width: 100%;
     max-width: 300px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave nos inputs */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .upload-image-form {
     display: flex;
-    flex-direction: column; /* Alinha o ícone e o botão na vertical */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     margin-bottom: 20px;
-    width: 100%; /* Garante que o contêiner de upload ocupe toda a largura do formulário */
+    width: 100%; 
 }
 
 .upload-image-form img {
@@ -174,7 +171,7 @@ button {
     font-family: 'Radley', serif;
     padding: 10px;
     border: none;
-    border-radius: 30px; /* Botão com bordas arredondadas */
+    border-radius: 30px; 
     background-color: #756357;
     color: #EFEFEF;
     font-size: 18px;
@@ -182,9 +179,87 @@ button {
     transition: background-color 0.3s ease;
     width: 100%;
     max-width: 300px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave no botão */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 button:hover {
     background-color: #5A4B3F;
+}
+
+/* Estilo para a tabela */
+.container-table {
+    background-color: #3b2a22; /* Fundo marrom escuro */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #7a6451; /* Linha sutil entre as linhas da tabela */
+}
+
+.table th {
+    background-color: #5a4637; /* Fundo das células de cabeçalho */
+    color: #EFEFEF;
+    font-family: 'Radley', serif;
+    font-size: 18px;
+}
+
+.table td {
+    background-color: #EFEFEF; /* Fundo das células de dados */
+    color: #4B3A2D;
+    font-family: 'Radley', serif;
+    font-size: 16px;
+}
+
+.table img {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table .btn {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-family: 'Radley', serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table .btn-primary {
+    background-color: #5a4637;
+    color: #EFEFEF;
+}
+
+.table .btn-primary:hover {
+    background-color: #46382c;
+}
+
+.table .btn-danger {
+    background-color: #d9534f;
+    color: #EFEFEF;
+}
+
+.table .btn-danger:hover {
+    background-color: #c9302c;
+}
+
+.table tr:last-child td {
+    border-bottom: none; /* Remove a borda da última linha */
+}
+
+.table td[colspan="6"] {
+    text-align: center;
+    color: #EFEFEF;
+    background-color: #5a4637; /* Fundo mais escuro para a mensagem de sem registros */
 }
