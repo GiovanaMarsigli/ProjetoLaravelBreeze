@@ -7,29 +7,22 @@ use Illuminate\Support\Facades\Validator;
 
 class ClienteController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        $clientes = Cliente::all(); // Obtenha todos os clientes
-        return view('index', compact('clientes')); // Retorne a view com os dados
+        $clientes = Cliente::all(); 
+        return view('index', compact('clientes')); 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+    
     public function create()
     {
-        return view('create'); // Retorne a view de criação de um novo cliente
+        return view('create'); 
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    
     public function store(Request $request)
     {
-        // Validação dos dados recebidos
+        
         $validator = Validator::make($request->all(), [
             'nome_produto' => 'required|string|max:100',
             'preco' => 'required|numeric|min:0',
@@ -61,21 +54,16 @@ class ClienteController extends Controller
         return redirect()->back()->with("sucesso", "Produto adicionado com sucesso!");
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit($id)
     {
         $cliente = Cliente::find($id);
-        return view('editar', compact('cliente')); // Retorne a view de edição com os dados do cliente
+        return view('editar', compact('cliente')); 
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    
     public function update(Request $request, string $id)
     {
-        // Validação dos dados recebidos
+        
         $validator = Validator::make($request->all(), [
             'nome_produto' => 'required|string|max:100',
             'preco' => 'required|numeric|min:0',
@@ -97,7 +85,6 @@ class ClienteController extends Controller
         $cliente->preco = $request->preco;
         $cliente->descricao_produto = $request->descricao_produto;
 
-        // Upload da imagem
         if ($request->hasFile('imagem')) {
             $imageName = time() . '.' . $request->imagem->extension();
             $request->imagem->move(public_path('images'), $imageName);
@@ -108,9 +95,7 @@ class ClienteController extends Controller
         return redirect('clientes')->with("sucesso", "Produto atualizado com sucesso!");
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    
     public function destroy(string $id)
     {
         $cliente = Cliente::find($id);

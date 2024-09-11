@@ -148,9 +148,9 @@ input[type="text"], input[type="file"] {
 }
 
 .upload-image-form img {
-    width: 100px; /* Define o tamanho máximo da largura */
-    height: 100px; /* Define o tamanho máximo da altura */
-    object-fit: contain; /* Garante que a imagem mantenha sua proporção */
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain; 
     margin-bottom: 10px;
 }
 
@@ -158,15 +158,14 @@ input[type="text"], input[type="file"] {
 .upload-image-form label {
     cursor: pointer;
     display: inline-block;
-    text-align: center; /* Centraliza o conteúdo do label */
-    width: auto; /* Ajusta o label para o tamanho do conteúdo */
+    text-align: center; 
+    width: auto; 
 }
 
 input[type="file"] {
-    display: none; /* Mantém o input oculto */
+    display: none; 
 }
 
-/* Botão de confirmar */
 button {
     font-family: 'Radley', serif;
     padding: 10px;
@@ -186,9 +185,8 @@ button:hover {
     background-color: #5A4B3F;
 }
 
-/* Estilo para a tabela */
 .container-table {
-    background-color: #3b2a22; /* Fundo marrom escuro */
+    background-color: #3b2a22; 
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -202,18 +200,18 @@ button:hover {
 .table th, .table td {
     padding: 15px;
     text-align: left;
-    border-bottom: 1px solid #7a6451; /* Linha sutil entre as linhas da tabela */
+    border-bottom: 1px solid #7a6451; 
 }
 
 .table th {
-    background-color: #5a4637; /* Fundo das células de cabeçalho */
+    background-color: #5a4637; 
     color: #EFEFEF;
     font-family: 'Radley', serif;
     font-size: 18px;
 }
 
 .table td {
-    background-color: #EFEFEF; /* Fundo das células de dados */
+    background-color: #EFEFEF; 
     color: #4B3A2D;
     font-family: 'Radley', serif;
     font-size: 16px;
@@ -255,11 +253,11 @@ button:hover {
 }
 
 .table tr:last-child td {
-    border-bottom: none; /* Remove a borda da última linha */
+    border-bottom: none; 
 }
 
 .table td[colspan="6"] {
     text-align: center;
     color: #EFEFEF;
-    background-color: #5a4637; /* Fundo mais escuro para a mensagem de sem registros */
+    background-color: #5a4637; 
 }

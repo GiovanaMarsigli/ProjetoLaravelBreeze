@@ -41,21 +41,19 @@
                 </div>
                 
                 <script>
-                    // Seleciona o input e a imagem de pré-visualização
                     const inputImagem = document.getElementById('imagem-produto');
                     const imagemPreview = document.getElementById('imagem-preview');
                 
-                    // Adiciona um listener para quando o usuário selecionar uma imagem
                     inputImagem.addEventListener('change', function(event) {
-                        const file = event.target.files[0]; // Pega o arquivo selecionado
+                        const file = event.target.files[0]; 
                         if (file) {
-                            const reader = new FileReader(); // Cria um FileReader para ler o arquivo
+                            const reader = new FileReader(); 
                 
                             reader.onload = function(e) {
-                                imagemPreview.src = e.target.result; // Atualiza a imagem de pré-visualização
+                                imagemPreview.src = e.target.result; 
                             }
                 
-                            reader.readAsDataURL(file); // Converte a imagem para uma URL utilizável
+                            reader.readAsDataURL(file); 
                         }
                     });
                 </script>
