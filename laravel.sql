@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Set-2024 às 05:51
+-- Tempo de geração: 11-Set-2024 às 03:31
 -- Versão do servidor: 10.4.32-MariaDB
 -- versão do PHP: 8.2.12
 
@@ -20,6 +20,30 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `laravel`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `clientes`
+--
+
+CREATE TABLE `clientes` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nome_produto` varchar(255) NOT NULL,
+  `preco` decimal(8,2) NOT NULL,
+  `descricao_produto` text DEFAULT NULL,
+  `imagem` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Extraindo dados da tabela `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `nome_produto`, `preco`, `descricao_produto`, `imagem`, `created_at`, `updated_at`) VALUES
+(2, 'jhbj', 10.00, 'nknhk', '1725837061.png', '2024-09-09 02:11:01', '2024-09-09 02:11:01'),
+(3, 'nahjj', 5.00, 'ushdsisd', '1725838428.png', '2024-09-09 02:33:48', '2024-09-09 02:33:48');
 
 -- --------------------------------------------------------
 
@@ -81,7 +105,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
 (5, '2024_06_12_171201_create_contatos_table', 2),
-(6, '2024_09_06_030826_create_produtos_table', 3);
+(6, '2024_09_06_030826_create_produtos_table', 3),
+(7, '2024_09_08_211656_create_clientes_table', 4);
 
 -- --------------------------------------------------------
 
@@ -94,6 +119,13 @@ CREATE TABLE `password_reset_tokens` (
   `token` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Extraindo dados da tabela `password_reset_tokens`
+--
+
+INSERT INTO `password_reset_tokens` (`email`, `token`, `created_at`) VALUES
+('marsigligiovana@gmail.com', '$2y$12$xoK/QU3DVbCCN.vWJqqo6eIgfSHBI218zB9GC4mLUDyKB9ozeJXVG', '2024-09-09 00:07:46');
 
 -- --------------------------------------------------------
 
@@ -148,8 +180,23 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Extraindo dados da tabela `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Mari', 'marianaarashiro09@gmail.com', NULL, '$2y$12$9s6i2pCtZGRW76BZcXjagOhSHn7ejuH9BdH77zy30w/kNQRKcVNtS', NULL, '2024-09-08 23:08:12', '2024-09-08 23:08:12'),
+(2, 'gibs', 'marsigligiovana@gmail.com', NULL, '$2y$12$AqUcPXDJP7fy3VsRiuId1.aYCMdTFmvQ0UD2iM.2SEeo9DnYFzDRu', NULL, '2024-09-08 23:11:47', '2024-09-08 23:11:47'),
+(3, 'Giovana', 'gibs@gmail.com', NULL, '$2y$12$r9EQI3q/pHLsuQBjJpqsxuhA1LISUu87dROPyHuvKxsWmp4Z/yrgK', NULL, '2024-09-09 00:08:20', '2024-09-09 00:08:20');
+
+--
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices para tabela `clientes`
+--
+ALTER TABLE `clientes`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices para tabela `contatos`
@@ -202,6 +249,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT de tabela `clientes`
+--
+ALTER TABLE `clientes`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT de tabela `contatos`
 --
 ALTER TABLE `contatos`
@@ -217,7 +270,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT de tabela `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `personal_access_tokens`
@@ -235,7 +288,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
