@@ -67,9 +67,9 @@
 
         </div>
     </div>
-   <!-- Seção Tabela com Clientes -->
+   <!-- TABELA  -->
    <div class="container-table mt-5">
-        <h1>Lista de Clientes</h1>
+        <h1>PRODUTOS REGISTRADOS</h1>
         <table class="table mt-5">
             <thead>
                 <tr>
